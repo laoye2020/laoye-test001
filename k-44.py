@@ -11,11 +11,11 @@ import string
 # 根据自己的设备设置worker数量
 workers = 4
 # 检测时间间隔，单位：秒
-check_interval = 300
+check_interval = 600
 # 粘贴code
 code = ""
 # 设置触发重启所有（kuzco/ollama）进程的最低阈值，释放内存和显存。比如你机器600秒平均推理数量为600，建议设置为200，设置为平均推数量的1/3
-threshold = 20
+threshold = 100
 
 worker_ids = {}
 log_directory = 'log'
